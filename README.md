@@ -24,3 +24,18 @@ Plataforma comercial integral diseñada para la gestión de inventarios, control
 1. **Clonar el repositorio:**
    ```bash
    git clone https://github.com
+
+
+### ⚠️ Actualización de Rutas (Refactorización)
+Si el proyecto contenía rutas fijas (ejemplo: `/cristianferreteria/`), se deben actualizar a la nueva estructura del proyecto:
+*   **Nueva URL Local:** `http://localhost/sistema-gestion-facturacion-arca/`
+*   **Directorio raíz:** Asegurarse de que las inclusiones de PHP (`include` o `require`) apunten a la carpeta `/Panel/` actual.
+
+## 📞 Contacto y Soporte
+
+Si estás interesado en implementar este sistema o querés conocer más detalles técnicos sobre el **consumo de los Web Services de ARCA (ex-AFIP)**, no dudes en contactarme. 
+
+Estaré encantado de explicarte:
+*   El proceso de autenticación (WSAA) y generación del Token (TRA).
+*   La lógica de envío de comprobantes (WSFEX/WSFEV1).
+*   La gestión de certificados `.crt` y `.key` en entornos de producción.
