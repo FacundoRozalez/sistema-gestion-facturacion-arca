@@ -1,0 +1,24 @@
+/* Contenedor de resultados de búsqueda con scroll */
+#tablaProductosEncontrados {
+    display: none;               /* Solo visible cuando hay resultados */
+    max-height: 300px;           /* Altura máxima para activar scroll */
+    overflow-y: auto;            /* Scroll vertical */
+    border-collapse: collapse;
+    margin-top: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Quitar scroll del tbody */
+#tablaProductosEncontrados tbody {
+    display: table-row-group;  /* valor por defecto */
+    width: 100%;
+    max-height: none;
+    overflow: visible;
+}
+
+/* Asegurar que las filas ocupen todo el ancho */
+#tablaProductosEncontrados tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
